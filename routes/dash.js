@@ -27,9 +27,9 @@ router.get('/', function(req,res){
 
 router.post('/test',function(req,res){
 
-    let checkbox = req.body.toggle
+    let checkbox = req.body.test
 
-    if (!checkbox){
+    if (!req.body.test){
         checkbox = 'off';
     }
     console.log(checkbox)
