@@ -6,6 +6,7 @@
   text-align     : center;              /* 文字位置は中央     */
   font-size      : 13px;                /* 文字サイズ         */
   position       : relative;            /* 親要素が基点       */
+  margin-top: 10px;
   margin-left    : -275%;                /* 中央寄せ           */
   width          : 68px;               /* ボタンの横幅       */
   background     : rgb(217, 194, 255);                /* デフォルト背景色   */
