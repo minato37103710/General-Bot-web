@@ -25,7 +25,7 @@ router.get('/', function(req,res){
     res.render('dash',{check:''})
 })
 
-router.post('/',function(req,res){
+router.post('/test',function(req,res){
 
     let checkbox = req.body.toggle
 
@@ -47,7 +47,7 @@ router.post('/',function(req,res){
         return d
     })
 
-    res.redirect('/dash')
+    res.redirect('/dashboard')
 })
 
 module.exports = router;

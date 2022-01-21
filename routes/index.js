@@ -25,29 +25,5 @@ router.get('/', function(req,res){
     res.render('index',{check:''})
 })
 
-router.post('/test',function(req,res){
-
-    let checkbox = req.body.test
-
-    if (!req.body.test){
-        checkbox = 'off';
-    }
-    console.log(checkbox)
-
-    setting.findOne({server_name:'test3'}).then(d=>{
-        if(!d){
-            console.log(d)
-            const settings = new setting({
-                server_name:'test4',
-                test1:checkbox,
-        });
-        return settings.save();
-        }
-        console.log(d)
-        return d
-    })
-
-    res.redirect('/')
-})
 
 module.exports = router;
