@@ -24,7 +24,7 @@ router.get('/', function(req,res){
         }catch(e){
             console.log('nul')}
     })
-    res.render('dash',{check:_check})
+    res.render('guild',{check:_check})
 })
 
 router.post('/test',function(req,res){
